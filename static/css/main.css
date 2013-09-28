@@ -80,3 +80,6 @@ header p {
   border: 1px solid #dedede;
   z-index: -1;
 }
+.sel{
+  color:#c00;
+}

@@ -30,7 +30,8 @@
        "async":"0.2.9",
        "log4js":"0.6.6",
        "express":"3.4.0",
-       "wx_widget_sdk":"*"
+       "wx_widget_sdk":"*",
+       "weixin-robot":"0.4.5"
    },
   "engines": {
     "node": ">=0.10.0"
