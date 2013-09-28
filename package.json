@@ -1,0 +1,38 @@
+{
+  "name": "wx_vote_client",
+  "version": "0.0.1",
+  "main": "app.js",
+  "description": "widget vote client",
+  "keywords": [
+    "api",
+    "server"
+  ],
+  "author": {
+    "name": "doublespout",
+    "email": "snoopyxdy@163.com"
+  },
+  "homepage": "https://github.com/DoubleSpout/wx_vote_client",
+  "bugs": {
+    "url": "https://github.com/DoubleSpout/wx_vote_client/issues",
+    "email": "snoopyxdy@163.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DoubleSpout/wx_vote_client.git"
+  },
+  "os": [
+    "macos",
+    "linux",
+    "darwin",
+    "win32"
+  ],
+  "dependencies": {
+       "async":"0.2.9",
+       "log4js":"0.6.6",
+       "express":"3.4.0",
+       "wx_widget_sdk":"*"
+   },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}

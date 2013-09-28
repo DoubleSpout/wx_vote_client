@@ -1,0 +1,156 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>"星光帮" - 投出您宝贵的一票</title>
+  <meta name="description" content="星光帮评选投票">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- Global CSS for the page and tiles -->
+  <link rel="stylesheet" href="../css/main.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+  <!-- ColorBox CSS -->
+  <link rel="stylesheet" href="../css/colorbox.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+  <div id="container">
+
+    <div id="main" role="main">
+
+      <ul id="tiles">
+        <!-- These are our grid blocks -->
+       
+
+        <li><a href="../img/image_1.jpg" rel="lightbox"><img src="../img/image_1.jpg" width="80" height="100"></a>
+          <p>
+            <span>小熊</span></br>
+            <span>178票</span>
+            <i class="icon-thumbs-up icon-3x pull-right" data-toggle="modal" href="#myModal"></i>
+          </p>
+        </li>
+
+        <li><a href="../img/image_1.jpg" rel="lightbox"><img src="../img/image_1.jpg" width="80" height="100"></a>
+          <p>
+            <span>小熊</span></br>
+            <span>178票</span>
+            <i class="icon-thumbs-up icon-3x pull-right" data-toggle="modal" href="#myModal"></i>
+          </p>
+        </li>
+
+        <li><a href="../img/image_1.jpg" rel="lightbox"><img src="../img/image_1.jpg" width="80" height="100"></a>
+          <p>
+            <span>小熊</span></br>
+            <span>178票</span>
+            <i class="icon-thumbs-up icon-3x pull-right" data-toggle="modal" href="#myModal"></i>
+          </p>
+        </li>
+
+        <li><a href="../img/image_1.jpg" rel="lightbox"><img src="../img/image_1.jpg" width="80" height="100"></a>
+          <p>
+            <span>小熊</span></br>
+            <span>178票</span>
+            <i class="icon-thumbs-up icon-3x pull-right" data-toggle="modal" href="#myModal"></i>
+          </p>
+        </li>
+
+        <li><a href="../img/image_1.jpg" rel="lightbox"><img src="../img/image_1.jpg" width="80" height="100"></a>
+          <p>
+            <span>小熊</span></br>
+            <span>178票</span>
+            <i class="icon-thumbs-up icon-3x pull-right" data-toggle="modal" href="#myModal"></i>
+          </p>
+        </li>
+
+        <li><a href="../img/image_1.jpg" rel="lightbox"><img src="../img/image_1.jpg" width="80" height="100"></a>
+          <p>
+            <span>小熊</span></br>
+            <span>178票</span>
+            <i class="icon-thumbs-up icon-3x pull-right" data-toggle="modal" href="#myModal"></i>
+          </p>
+        </li>
+
+        
+        <!-- End of grid blocks -->
+      </ul>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true" id="submit_close">&times;</button>
+            <h4 class="modal-title">确认给选手投票</h4>
+          </div>
+          <div class="modal-body">
+            每人限投一票,所以确定前请仔细考虑您手中的宝贵一票该如何归属哟 ^_^
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">我还没想好</button>
+            <button type="button" class="btn btn-primary" id="submit_vote">确定</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+  </div>
+
+  <!-- include jQuery -->
+  <script src="../js/vendor/jquery.min.js"></script>
+
+  <!-- Include the plug-in -->
+  <script src="../js/vendor/jquery.wookmark.js"></script>
+
+  <!-- Include the imagesLoaded plug-in -->
+  <script src="../js/vendor/jquery.imagesloaded.js"></script>
+
+  <!-- include colorbox -->
+  <script src="../js/vendor/jquery.colorbox-min.js"></script>
+
+  <!-- Include Bootstrap -->
+  <script src="../js/vendor/bootstrap.min.js"></script>
+
+  <!-- Once the page is loaded, initalize the plug-in. -->
+  <script type="text/javascript">
+  (function ($){
+      $('#tiles').imagesLoaded(function() {
+        // Prepare layout options.
+        var options = {
+          autoResize: true, // This will auto-update the layout when the browser window is resized.
+          container: $('#main'), // Optional, used for some extra CSS styling
+          offset: 15, // Optional, the distance between grid items
+          outerOffset: 10, // Optional, the distance to the containers border
+          itemWidth: 90 // Optional, the width of a grid item
+        };
+
+        // Get a reference to your grid items.
+        var handler = $('#tiles li');
+
+        // Call the layout function.
+        handler.wookmark(options);
+
+        // Init lightbox
+        $('a', handler).colorbox({
+          rel: 'lightbox'
+        });
+      });
+    })(jQuery);
+  </script>
+   <script src="../js/vote.js"></script>
+</body>
+</html>
